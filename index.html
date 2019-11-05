@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Toggle Dialog</title>
+	</head>
+	<body>
+		<h1>Dialog</h1>
+		<div id="openBtn">Open</div>
+		<dialog id="dialog">
+			<div id="closeBtn">Close</div>
+			<div>
+        <span>Welcome</span>
+      </div>
+    </dialog>
+    <script>
+
+      const dialog = document.getElementById('dialog');
+      const openBtn = document.getElementById('openBtn');
+      const closeBtn = document.getElementById('closeBtn');
+
+      openBtn.addEventListener('click', function() {
+
+        dialog.setAttribute('open', true);
+
+      });
+
+      closeBtn.addEventListener('click', function() {
+
+        dialog.removeAttribute('open');
+
+      });
+
+    </script>
+	</body>
+</html>
+
